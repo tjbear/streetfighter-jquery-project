@@ -2,10 +2,14 @@ $(document).ready(function() {
     $('.ryu').mouseenter(function() {
         $('.ryu-action').hide();
         $('.ryu-ready').show();
+        $('.instructions-first').fadeOut().finish();
+        $('.instructions-final').fadeIn().css('display', 'inline-block');
     })
     .mouseleave(function() {
         $('.ryu-action').hide();
         $('.ryu-still').show();
+        $('.instructions-final').fadeOut().finish();
+        $('.instructions-first').fadeIn().css('display', 'inline-block');
     })
     .mousedown(function() {
         playHoudken();

@@ -66,10 +66,13 @@ body { background-color: black; }
 #INSTRUCTIONS
 *************************/
 
-.instructions-first {
-    display: inline-block;
+.instructions-first,
+.instructions-final {
     width: 500px;
+    display: inline-block;
 }
+
+.instructions-final { display: none; }
 
 .instructions-first img {
     display: block;
@@ -89,4 +92,9 @@ p {
 
 img[src*="street_fighter_logo"] {
     margin-top: 1em;
+}
+
+.finish {
+    position: absolute;
+    bottom: 1em;
 }
