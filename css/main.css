@@ -1,6 +1,9 @@
-body {
-    background-color: black;
-}
+/*************************
+#CONTAINER
+*************************/
+
+
+body { background-color: black; }
 
 .main {
     background-color: white;
@@ -12,6 +15,10 @@ body {
     z-index: 1;
 }
 
+/*************************
+#RYU
+*************************/
+
 .ryu,
 .hadouken { float: left; }
 
@@ -22,30 +29,26 @@ body {
 
 .ryu-ready,
 .ryu-still,
-.ryu-throwing {
+.ryu-throwing,
+.ryu-cool {
     width: 659px;
     height: 494px;
 }
 
 .ryu-ready,
-.ryu-throwing { display: none; }
+.ryu-throwing,
+.ryu-cool { display: none; }
 
-.ryu-ready {
-    background-image: url('../images/ryu-ready-position.gif')
-}
-
-.ryu-still {
-    background-image: url('../images/ryu-standing-still.png')
-}
-
-.ryu-throwing {
-    background-image: url('../images/ryu-throwing-hadouken.png')
-}
+.ryu-ready { background-image: url('../images/ryu-ready-position.gif') }
+.ryu-still { background-image: url('../images/ryu-standing-still.png') }
+.ryu-throwing { background-image: url('../images/ryu-throwing-hadouken.png') }
+.ryu-cool { background-image: url('../images/ryu-cool.gif') }
 
 .hadouken,
 .ryu-ready,
 .ryu-still,
-.ryu-throwing { background-repeat: no-repeat; }
+.ryu-throwing,
+.ryu-cool { background-repeat: no-repeat; }
 
 .hadouken {
     background-image: url('../images/hadouken.gif');
@@ -57,4 +60,33 @@ body {
     z-index: 10;
     top: 167px;
     left: 520px;
+}
+
+/*************************
+#INSTRUCTIONS
+*************************/
+
+.instructions-first {
+    display: inline-block;
+    width: 500px;
+}
+
+.instructions-first img {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    font-weight: 700;
+    text-align: center; 
+}
+
+.header-text {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+img[src*="street_fighter_logo"] {
+    margin-top: 1em;
 }
